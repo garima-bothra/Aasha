@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct DocumentRowView: View {
+
+    let book: Book!
+
     var body: some View {
         HStack {
             Image(systemName: "book.fill")
                 .foregroundColor(.green)
                 .frame(width: 40)
             VStack(alignment: .leading) {
-                Text("My book")
+                Text(book.name ?? "Book Name")
                     .font(.caption)
                     .fontWeight(.black)
-                Text("Book subheading")
+                Text(book.descrip ?? "Book Description")
                     .font(.footnote)
                     .foregroundColor(.secondary)
             }
@@ -27,6 +30,6 @@ struct DocumentRowView: View {
 
 struct DocumentRowView_Previews: PreviewProvider {
     static var previews: some View {
-        DocumentRowView()
+        Text("Book")
     }
 }

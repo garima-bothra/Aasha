@@ -15,11 +15,12 @@ struct AddFileView: View {
     @State var bookname = String()
     @State var showPicker = false
     @State var url: URL!
-
+    @State var description = String()
     var body: some View {
         NavigationView {
         Form {
             TextField("Name", text: $bookname)
+            TextField("Short Description", text: $description)
             Button(action: {
                 self.showPicker = true
             })
@@ -40,6 +41,7 @@ struct AddFileView: View {
                     let book = Book(context: managedObjectContext)
                     book.name = bookname
                     book.bookURL = url
+                    book.descrip = description
                     book.id = UUID()
                     do {
                         try self.managedObjectContext.save()
@@ -51,7 +53,7 @@ struct AddFileView: View {
                 {
                     Text("Save")
                         .frame(alignment: .center)
-                }.disabled(bookname == "" || url == nil)
+                }.disabled(bookname == "" || url == nil || description == "")
             }
         }
         .navigationTitle("Add Book")

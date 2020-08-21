@@ -20,7 +20,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(books, id: \.self) { book in
-                Text(book.name ?? "Unknown")
+                DocumentRowView(book: book)
             }
         .navigationTitle("Your Documents")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: {
