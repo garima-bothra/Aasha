@@ -19,14 +19,6 @@ struct HomeView: View {
                 }
                 .onDelete(perform: delete)
             }
-//            ScrollView {
-//                LazyVStack {
-//                    ForEach(1...10, id: \.self) { value in
-//                            DocumentRowView()
-//                                    }
-//                }
-//            }
-//            .background(Color(.white))
         .navigationTitle("Your Documents")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: {
                  self.showPicker = true

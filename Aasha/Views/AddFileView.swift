@@ -36,7 +36,7 @@ struct AddFileView: View {
                 {
                     Text("Save")
                         .frame(alignment: .center)
-                }
+                }.disabled(bookname == "" || url == nil)
             }
         }
         .navigationTitle("Add Book")
