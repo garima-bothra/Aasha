@@ -21,7 +21,7 @@ struct HomeView: View {
         NavigationView {
             List {
                 ForEach(books, id: \.self) { book in
-                DocumentRowView(book: book)
+                DocumentRowView(book: book).environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
                 }
                 .onDelete(perform: deleteBook)
                 
