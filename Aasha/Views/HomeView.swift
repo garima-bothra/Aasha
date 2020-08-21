@@ -19,8 +19,12 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            List(books, id: \.self) { book in
+            List {
+                ForEach(books, id: \.self) { book in
                 DocumentRowView(book: book)
+                }
+                .onDelete(perform: deleteBook)
+                
             }
         .navigationTitle("Your Documents")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: {
@@ -34,7 +38,16 @@ struct HomeView: View {
         }
     }
 
-    func delete(at offsets: IndexSet) {
+    func deleteBook(at offsets: IndexSet) {
+        for index in offsets {
+                let book = books[index]
+                managedObjectContext.delete(book)
+            }
+        do {
+            try managedObjectContext.save()
+        } catch {
+            // handle the Core Data error
+        }
         }
 
 }

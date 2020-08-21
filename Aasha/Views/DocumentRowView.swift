@@ -12,6 +12,7 @@ struct DocumentRowView: View {
     let book: Book!
 
     var body: some View {
+        NavigationLink(destination: PDFKitView(url: book.bookURL!)){
         HStack {
             Image(systemName: "book.fill")
                 .foregroundColor(.green)
@@ -24,6 +25,7 @@ struct DocumentRowView: View {
                     .font(.footnote)
                     .foregroundColor(.secondary)
             }
+        }
         }
     }
 }
