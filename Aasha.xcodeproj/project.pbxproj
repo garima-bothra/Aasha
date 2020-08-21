@@ -123,7 +123,6 @@
 			children = (
 				864F482B24F0134B00D63C44 /* Utils */,
 				864F482C24F0135600D63C44 /* CoreData */,
-				8610D6C224EE5A1300EBCC04 /* ContentView.swift */,
 				864F482D24F0138500D63C44 /* Views */,
 				8610D6C424EE5A1500EBCC04 /* Assets.xcassets */,
 				8610D6C924EE5A1500EBCC04 /* LaunchScreen.storyboard */,
@@ -185,6 +184,7 @@
 			children = (
 				8610D6EE24EE5A4400EBCC04 /* HomeView.swift */,
 				864F482924EFC9D900D63C44 /* AddFileView.swift */,
+				8610D6C224EE5A1300EBCC04 /* ContentView.swift */,
 				864F483024F02C3D00D63C44 /* Helper View */,
 				864F482E24F023D200D63C44 /* DetailView.swift */,
 				8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */,

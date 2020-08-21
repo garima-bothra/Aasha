@@ -21,14 +21,14 @@ struct HomeView: View {
         NavigationView {
             List {
                 ForEach(books, id: \.self) { book in
-                DocumentRowView(book: book).environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
+                    DocumentRowView(book: book).environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
                 }
                 .onDelete(perform: deleteBook)
                 
             }
-        .navigationTitle("Your Documents")
+            .navigationTitle("Your Documents")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: {
-                 self.showPicker = true
+                self.showPicker = true
             }){
                 Image(systemName: "plus")
             })
@@ -40,15 +40,15 @@ struct HomeView: View {
 
     func deleteBook(at offsets: IndexSet) {
         for index in offsets {
-                let book = books[index]
-                managedObjectContext.delete(book)
-            }
+            let book = books[index]
+            managedObjectContext.delete(book)
+        }
         do {
             try managedObjectContext.save()
         } catch {
             // handle the Core Data error
         }
-        }
+    }
 
 }
 

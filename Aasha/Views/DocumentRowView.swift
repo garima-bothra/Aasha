@@ -13,19 +13,19 @@ struct DocumentRowView: View {
 
     var body: some View {
         NavigationLink(destination: DetailView(book: book)){
-        HStack {
-            Image(systemName: "book.fill")
-                .foregroundColor(.green)
-                .frame(width: 40)
-            VStack(alignment: .leading) {
-                Text(book.name ?? "Book Name")
-                    .font(.caption)
-                    .fontWeight(.black)
-                Text(book.descrip ?? "Book Description")
-                    .font(.footnote)
-                    .foregroundColor(.secondary)
+            HStack {
+                Image(systemName: "book.fill")
+                    .foregroundColor(.green)
+                    .frame(width: 40)
+                VStack(alignment: .leading) {
+                    Text(book.name ?? "Book Name")
+                        .font(.caption)
+                        .fontWeight(.black)
+                    Text(book.descrip ?? "Book Description")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+                }
             }
-        }
         }
     }
 }

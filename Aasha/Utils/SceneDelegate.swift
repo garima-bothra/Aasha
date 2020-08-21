@@ -15,9 +15,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
         let context = persistentContainer.viewContext
@@ -61,35 +58,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     lazy var persistentContainer: NSPersistentContainer = {
-      // 2
-      let container = NSPersistentContainer(name: "Book")
-      // 3
-      container.loadPersistentStores { _, error in
-        // 4
-        if let error = error as NSError? {
-          // You should add your own error handling code here.
-          fatalError("Unresolved error \(error), \(error.userInfo)")
+        // 2
+        let container = NSPersistentContainer(name: "Book")
+        // 3
+        container.loadPersistentStores { _, error in
+            // 4
+            if let error = error as NSError? {
+                // You should add your own error handling code here.
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
         }
-      }
-      return container
+        return container
     }()
 
     func saveContext() {
-      // 1
-      let context = persistentContainer.viewContext
-      // 2
-      if context.hasChanges {
-        do {
-          // 3
-          try context.save()
-        } catch {
-          // 4
-          // The context couldn't be saved.
-          // You should add your own error handling here.
-          let nserror = error as NSError
-          fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        // 1
+        let context = persistentContainer.viewContext
+        // 2
+        if context.hasChanges {
+            do {
+                // 3
+                try context.save()
+            } catch {
+                // 4
+                // The context couldn't be saved.
+                // You should add your own error handling here.
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
         }
-      }
     }
 
 }

@@ -13,24 +13,19 @@ struct DetailView: View {
         Form {
             Text(book.descrip ?? "Description")
             Section {
-//                NavigationLink(
-//                    destination: PDFKitView(url: book.bookURL!),
-//                    label: {
-//                        Text("Document")
-//                    })
                 ForEach(book.documentArray, id: \.self) { doc in
                     NavigationLink(destination: PDFKitView(url: doc.bookURL!)) {
-                    Text(doc.wrappedLang)
-                                }
+                        Text(doc.wrappedLang)
                     }
-    }
+                }
+            }
         }
         .navigationTitle(book.name ?? "Book Name")
-}
+    }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-       Text("Hello")
+        Text("Hello")
     }
 }
