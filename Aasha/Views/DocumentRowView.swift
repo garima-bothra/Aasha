@@ -12,7 +12,7 @@ struct DocumentRowView: View {
     let book: Book!
 
     var body: some View {
-        NavigationLink(destination: PDFKitView(url: book.bookURL!)){
+        NavigationLink(destination: DetailView(book: book)){
         HStack {
             Image(systemName: "book.fill")
                 .foregroundColor(.green)

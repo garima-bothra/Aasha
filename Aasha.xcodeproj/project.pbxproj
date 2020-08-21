@@ -21,6 +21,7 @@
 		8610D6F524EEB14000EBCC04 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6F424EEB14000EBCC04 /* PDFKitView.swift */; };
 		864F482824EFB5BC00D63C44 /* Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 864F482624EFB5BC00D63C44 /* Book.xcdatamodeld */; };
 		864F482A24EFC9D900D63C44 /* AddFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F482924EFC9D900D63C44 /* AddFileView.swift */; };
+		864F482F24F023D200D63C44 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F482E24F023D200D63C44 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8610D6F424EEB14000EBCC04 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		864F482724EFB5BC00D63C44 /* Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Book.xcdatamodel; sourceTree = "<group>"; };
 		864F482924EFC9D900D63C44 /* AddFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileView.swift; sourceTree = "<group>"; };
+		864F482E24F023D200D63C44 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				864F482924EFC9D900D63C44 /* AddFileView.swift */,
 				8610D6F224EE75C400EBCC04 /* DocumentViewPicker.swift */,
 				8610D6F424EEB14000EBCC04 /* PDFKitView.swift */,
+				864F482E24F023D200D63C44 /* DetailView.swift */,
 				8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */,
 			);
 			path = Views;
@@ -311,6 +314,7 @@
 				864F482824EFB5BC00D63C44 /* Book.xcdatamodeld in Sources */,
 				8610D6BF24EE5A1300EBCC04 /* AppDelegate.swift in Sources */,
 				8610D6F124EE5F4F00EBCC04 /* DocumentRowView.swift in Sources */,
+				864F482F24F023D200D63C44 /* DetailView.swift in Sources */,
 				8610D6EF24EE5A4400EBCC04 /* HomeView.swift in Sources */,
 				8610D6F324EE75C400EBCC04 /* DocumentViewPicker.swift in Sources */,
 				864F482A24EFC9D900D63C44 /* AddFileView.swift in Sources */,
