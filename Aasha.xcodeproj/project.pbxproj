@@ -19,6 +19,8 @@
 		8610D6F124EE5F4F00EBCC04 /* DocumentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */; };
 		8610D6F324EE75C400EBCC04 /* DocumentViewPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6F224EE75C400EBCC04 /* DocumentViewPicker.swift */; };
 		8610D6F524EEB14000EBCC04 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6F424EEB14000EBCC04 /* PDFKitView.swift */; };
+		864F482824EFB5BC00D63C44 /* Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 864F482624EFB5BC00D63C44 /* Book.xcdatamodeld */; };
+		864F482A24EFC9D900D63C44 /* AddFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F482924EFC9D900D63C44 /* AddFileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRowView.swift; sourceTree = "<group>"; };
 		8610D6F224EE75C400EBCC04 /* DocumentViewPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewPicker.swift; sourceTree = "<group>"; };
 		8610D6F424EEB14000EBCC04 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
+		864F482724EFB5BC00D63C44 /* Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Book.xcdatamodel; sourceTree = "<group>"; };
+		864F482924EFC9D900D63C44 /* AddFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +113,10 @@
 			children = (
 				8610D6BE24EE5A1300EBCC04 /* AppDelegate.swift */,
 				8610D6C024EE5A1300EBCC04 /* SceneDelegate.swift */,
+				864F482624EFB5BC00D63C44 /* Book.xcdatamodeld */,
 				8610D6C224EE5A1300EBCC04 /* ContentView.swift */,
 				8610D6EE24EE5A4400EBCC04 /* HomeView.swift */,
+				864F482924EFC9D900D63C44 /* AddFileView.swift */,
 				8610D6F224EE75C400EBCC04 /* DocumentViewPicker.swift */,
 				8610D6F424EEB14000EBCC04 /* PDFKitView.swift */,
 				8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */,
@@ -278,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864F482824EFB5BC00D63C44 /* Book.xcdatamodeld in Sources */,
 				8610D6BF24EE5A1300EBCC04 /* AppDelegate.swift in Sources */,
 				8610D6F124EE5F4F00EBCC04 /* DocumentRowView.swift in Sources */,
 				8610D6EF24EE5A4400EBCC04 /* HomeView.swift in Sources */,
 				8610D6F324EE75C400EBCC04 /* DocumentViewPicker.swift in Sources */,
+				864F482A24EFC9D900D63C44 /* AddFileView.swift in Sources */,
 				8610D6C124EE5A1300EBCC04 /* SceneDelegate.swift in Sources */,
 				8610D6F524EEB14000EBCC04 /* PDFKitView.swift in Sources */,
 				8610D6C324EE5A1300EBCC04 /* ContentView.swift in Sources */,
@@ -613,6 +621,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		864F482624EFB5BC00D63C44 /* Book.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				864F482724EFB5BC00D63C44 /* Book.xcdatamodel */,
+			);
+			currentVersion = 864F482724EFB5BC00D63C44 /* Book.xcdatamodel */;
+			path = Book.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8610D6B324EE5A1300EBCC04 /* Project object */;
 }

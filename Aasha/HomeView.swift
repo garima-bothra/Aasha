@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
-
+import CoreData
 struct HomeView: View {
 
     @State var showPicker = false
+    var books: FetchedResults<Book>
     var body: some View {
         NavigationView {
             List {
@@ -34,7 +35,7 @@ struct HomeView: View {
             })
         }
         .sheet(isPresented: $showPicker) {
-            DocumentPicker()
+            AddFileView()
         }
     }
 
@@ -45,6 +46,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        Text("Hello")
     }
 }

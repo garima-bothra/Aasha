@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @FetchRequest(entity: Book.entity(), sortDescriptors:[]) var fetchBooks: FetchedResults<Book>
     var body: some View {
-        HomeView()
+        HomeView(books: fetchBooks)
     }
 }
 

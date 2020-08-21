@@ -11,6 +11,9 @@ struct DocumentPicker: UIViewControllerRepresentable {
     func makeCoordinator() -> DocumentPicker.Coordinator {
         return DocumentPicker.Coordinator(parent1: self)
     }
+
+    @Binding var url: URL!
+
     func makeUIViewController(context: UIViewControllerRepresentableContext<DocumentPicker>) -> UIDocumentPickerViewController {
         let picker = UIDocumentPickerViewController(forOpeningContentTypes: [.pdf])
         picker.allowsMultipleSelection = false
@@ -22,6 +25,7 @@ struct DocumentPicker: UIViewControllerRepresentable {
         
     }
 
+
     class Coordinator: NSObject, UIDocumentPickerDelegate{
         var parent: DocumentPicker
 
@@ -29,7 +33,8 @@ struct DocumentPicker: UIViewControllerRepresentable {
             parent = parent1
         }
         func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-            PDFKitView(url: urls[0])
+            self.parent.url = urls[0]
+           // PDFKitView(url: urls[0])
         }
     }
 }

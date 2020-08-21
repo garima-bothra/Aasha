@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let context = persistentContainer.viewContext
+        let contentView = ContentView().environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -53,11 +55,43 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
+        saveContext()
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
 
+    lazy var persistentContainer: NSPersistentContainer = {
+      // 2
+      let container = NSPersistentContainer(name: "Book")
+      // 3
+      container.loadPersistentStores { _, error in
+        // 4
+        if let error = error as NSError? {
+          // You should add your own error handling code here.
+          fatalError("Unresolved error \(error), \(error.userInfo)")
+        }
+      }
+      return container
+    }()
+
+    func saveContext() {
+      // 1
+      let context = persistentContainer.viewContext
+      // 2
+      if context.hasChanges {
+        do {
+          // 3
+          try context.save()
+        } catch {
+          // 4
+          // The context couldn't be saved.
+          // You should add your own error handling here.
+          let nserror = error as NSError
+          fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+      }
+    }
 
 }
 
