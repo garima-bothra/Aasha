@@ -1,0 +1,50 @@
+//
+//  HomeView.swift
+//  Aasha
+//
+//  Created by Garima Bothra on 20/08/20.
+//
+
+import SwiftUI
+
+struct HomeView: View {
+
+    @State var showPicker = false
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(1...10, id: \.self) { value in
+                    DocumentRowView()
+                }
+                .onDelete(perform: delete)
+            }
+//            ScrollView {
+//                LazyVStack {
+//                    ForEach(1...10, id: \.self) { value in
+//                            DocumentRowView()
+//                                    }
+//                }
+//            }
+//            .background(Color(.white))
+        .navigationTitle("Your Documents")
+            .navigationBarItems(leading: EditButton(), trailing: Button(action: {
+                 self.showPicker = true
+            }){
+                Image(systemName: "plus")
+            })
+        }
+        .sheet(isPresented: $showPicker) {
+            DocumentPicker()
+        }
+    }
+
+    func delete(at offsets: IndexSet) {
+        }
+
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
+}

@@ -15,6 +15,10 @@
 		8610D6CB24EE5A1500EBCC04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8610D6C924EE5A1500EBCC04 /* LaunchScreen.storyboard */; };
 		8610D6D624EE5A1500EBCC04 /* AashaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6D524EE5A1500EBCC04 /* AashaTests.swift */; };
 		8610D6E124EE5A1600EBCC04 /* AashaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6E024EE5A1600EBCC04 /* AashaUITests.swift */; };
+		8610D6EF24EE5A4400EBCC04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6EE24EE5A4400EBCC04 /* HomeView.swift */; };
+		8610D6F124EE5F4F00EBCC04 /* DocumentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */; };
+		8610D6F324EE75C400EBCC04 /* DocumentViewPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6F224EE75C400EBCC04 /* DocumentViewPicker.swift */; };
+		8610D6F524EEB14000EBCC04 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6F424EEB14000EBCC04 /* PDFKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		8610D6DC24EE5A1600EBCC04 /* AashaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AashaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8610D6E024EE5A1600EBCC04 /* AashaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AashaUITests.swift; sourceTree = "<group>"; };
 		8610D6E224EE5A1600EBCC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8610D6EE24EE5A4400EBCC04 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRowView.swift; sourceTree = "<group>"; };
+		8610D6F224EE75C400EBCC04 /* DocumentViewPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewPicker.swift; sourceTree = "<group>"; };
+		8610D6F424EEB14000EBCC04 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,10 @@
 				8610D6BE24EE5A1300EBCC04 /* AppDelegate.swift */,
 				8610D6C024EE5A1300EBCC04 /* SceneDelegate.swift */,
 				8610D6C224EE5A1300EBCC04 /* ContentView.swift */,
+				8610D6EE24EE5A4400EBCC04 /* HomeView.swift */,
+				8610D6F224EE75C400EBCC04 /* DocumentViewPicker.swift */,
+				8610D6F424EEB14000EBCC04 /* PDFKitView.swift */,
+				8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */,
 				8610D6C424EE5A1500EBCC04 /* Assets.xcassets */,
 				8610D6C924EE5A1500EBCC04 /* LaunchScreen.storyboard */,
 				8610D6CC24EE5A1500EBCC04 /* Info.plist */,
@@ -267,7 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8610D6BF24EE5A1300EBCC04 /* AppDelegate.swift in Sources */,
+				8610D6F124EE5F4F00EBCC04 /* DocumentRowView.swift in Sources */,
+				8610D6EF24EE5A4400EBCC04 /* HomeView.swift in Sources */,
+				8610D6F324EE75C400EBCC04 /* DocumentViewPicker.swift in Sources */,
 				8610D6C124EE5A1300EBCC04 /* SceneDelegate.swift in Sources */,
+				8610D6F524EEB14000EBCC04 /* PDFKitView.swift in Sources */,
 				8610D6C324EE5A1300EBCC04 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
