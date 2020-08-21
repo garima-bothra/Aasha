@@ -9,15 +9,18 @@ import SwiftUI
 import CoreData
 struct HomeView: View {
 
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @FetchRequest(entity: Book.entity(), sortDescriptors:[]) var books: FetchedResults<Book>
+
+    let sceneDelegate = UIApplication.shared.connectedScenes
+        .first!.delegate as! SceneDelegate
+    
     @State var showPicker = false
-    var books: FetchedResults<Book>
+    
     var body: some View {
         NavigationView {
-            List {
-                ForEach(1...10, id: \.self) { value in
-                    DocumentRowView()
-                }
-                .onDelete(perform: delete)
+            List(books, id: \.self) { book in
+                Text(book.name ?? "Unknown")
             }
         .navigationTitle("Your Documents")
             .navigationBarItems(leading: EditButton(), trailing: Button(action: {
@@ -27,7 +30,7 @@ struct HomeView: View {
             })
         }
         .sheet(isPresented: $showPicker) {
-            AddFileView()
+            AddFileView().environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
         }
     }
 

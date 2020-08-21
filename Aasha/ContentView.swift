@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @FetchRequest(entity: Book.entity(), sortDescriptors:[]) var fetchBooks: FetchedResults<Book>
+    let sceneDelegate = UIApplication.shared.connectedScenes
+        .first!.delegate as! SceneDelegate
+    
     var body: some View {
-        HomeView(books: fetchBooks)
+        HomeView().environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
     }
 }
 

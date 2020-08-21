@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct AddFileView: View {
+
+    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.managedObjectContext) var managedObjectContext
+
     @State var bookname = String()
     @State var showPicker = false
     @State var url: URL!
+
     var body: some View {
         NavigationView {
         Form {
@@ -29,9 +34,19 @@ struct AddFileView: View {
             .sheet(isPresented: $showPicker) {
                 DocumentPicker(url: $url)
             }
+
             Section {
                 Button(action: {
-
+                    let book = Book(context: managedObjectContext)
+                    book.name = bookname
+                    book.bookURL = url
+                    book.id = UUID()
+                    do {
+                        try self.managedObjectContext.save()
+                    } catch {
+                        // handle the Core Data error
+                    }
+                    self.presentationMode.wrappedValue.dismiss()
                 })
                 {
                     Text("Save")
