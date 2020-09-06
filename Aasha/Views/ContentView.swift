@@ -19,6 +19,11 @@ struct ContentView: View {
                     Image(systemName: "list.dash")
                     Text("Library")
                 }
+            TranslateView()
+                .tabItem {
+                    Image(systemName: "square.and.pencil")
+                    Text("Translate")
+                }
         }
     }
 }

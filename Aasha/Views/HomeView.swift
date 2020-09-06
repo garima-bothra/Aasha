@@ -33,7 +33,7 @@ struct HomeView: View {
                         }
                     }
                 }
-                .navigationTitle("Your Documents")
+                .navigationTitle("Your Library")
                 .navigationBarItems(trailing: Button(action: {
                     self.showPicker = true
                 }){

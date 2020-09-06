@@ -18,7 +18,7 @@ struct BookGridView: View {
                     .font(.title2)
                     .foregroundColor(Color.black)
                     .bold()
-                Text("\(book.document.wrappedLang)")
+                Text("(\(book.document.wrappedLang))")
                     .font(.subheadline)
                     .foregroundColor(Color.black)
                     .bold()
