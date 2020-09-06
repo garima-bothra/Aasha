@@ -14,30 +14,38 @@ struct HomeView: View {
 
     let sceneDelegate = UIApplication.shared.connectedScenes
         .first!.delegate as! SceneDelegate
-    
+
+
     @State var showPicker = false
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(books, id: \.self) { book in
-                    DocumentRowView(book: book).environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
+        
+        GeometryReader { geometry in
+            let columns = [
+                GridItem(.adaptive(minimum: geometry.size.width / 2 - 10) )
+            ]
+            NavigationView {
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 10) {
+                        ForEach(books, id: \.self) { book in
+                            BookGridView(book: book).environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext) .frame(maxWidth: geometry.size.width / 2 - 10, minHeight: geometry.size.width / 2 - 10, maxHeight: geometry.size.width / 2 - 10)
+                                .cornerRadius(10)
+                        }
+                    }
                 }
-                .onDelete(perform: deleteBook)
-                
+                .navigationTitle("Your Documents")
+                .navigationBarItems(trailing: Button(action: {
+                    self.showPicker = true
+                }){
+                    Image(systemName: "plus")
+                })
             }
-            .navigationTitle("Your Documents")
-            .navigationBarItems(leading: EditButton(), trailing: Button(action: {
-                self.showPicker = true
-            }){
-                Image(systemName: "plus")
-            })
-        }
-        .sheet(isPresented: $showPicker) {
-            AddFileView().environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
+            .sheet(isPresented: $showPicker) {
+                AddFileView().environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
+            }
         }
     }
-
+    
     func deleteBook(at offsets: IndexSet) {
         for index in offsets {
             let book = books[index]

@@ -19,7 +19,7 @@ extension Book {
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
     @NSManaged public var descrip: String?
-    @NSManaged public var docs: NSSet?
+    @NSManaged public var docs: Document?
 
     public var wrappedName: String {
         name ?? "Unknown Book"
@@ -29,29 +29,9 @@ extension Book {
         descrip ?? "Book Description"
     }
 
-    public var documentArray: [Document] {
-        let set = docs as? Set<Document> ?? []
-        return set.sorted {
-            $0.wrappedLang < $1.wrappedLang
-        }
+    public var document: Document {
+        docs ?? Document()
     }
-
-}
-
-// MARK: Generated accessors for docs
-extension Book {
-
-    @objc(addDocsObject:)
-    @NSManaged public func addToDocs(_ value: Document)
-
-    @objc(removeDocsObject:)
-    @NSManaged public func removeFromDocs(_ value: Document)
-
-    @objc(addDocs:)
-    @NSManaged public func addToDocs(_ values: NSSet)
-
-    @objc(removeDocs:)
-    @NSManaged public func removeFromDocs(_ values: NSSet)
 
 }
 

@@ -13,7 +13,13 @@ struct ContentView: View {
         .first!.delegate as! SceneDelegate
     
     var body: some View {
-        HomeView().environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
+        TabView {
+            HomeView().environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
+                .tabItem {
+                    Image(systemName: "list.dash")
+                    Text("Library")
+                }
+        }
     }
 }
 

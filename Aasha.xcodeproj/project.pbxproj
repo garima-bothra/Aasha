@@ -26,6 +26,7 @@
 		864F483624F02FAF00D63C44 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F483224F02FAF00D63C44 /* Book+CoreDataProperties.swift */; };
 		864F483724F02FAF00D63C44 /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F483324F02FAF00D63C44 /* Document+CoreDataClass.swift */; };
 		864F483824F02FAF00D63C44 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F483424F02FAF00D63C44 /* Document+CoreDataProperties.swift */; };
+		869501482504E57D0095E586 /* BookGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869501472504E57D0095E586 /* BookGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		864F483224F02FAF00D63C44 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		864F483324F02FAF00D63C44 /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
 		864F483424F02FAF00D63C44 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		869501472504E57D0095E586 /* BookGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				8610D6EE24EE5A4400EBCC04 /* HomeView.swift */,
 				864F482924EFC9D900D63C44 /* AddFileView.swift */,
 				8610D6C224EE5A1300EBCC04 /* ContentView.swift */,
+				869501472504E57D0095E586 /* BookGridView.swift */,
 				864F483024F02C3D00D63C44 /* Helper View */,
 				864F482E24F023D200D63C44 /* DetailView.swift */,
 				8610D6F024EE5F4F00EBCC04 /* DocumentRowView.swift */,
@@ -342,6 +345,7 @@
 				8610D6F324EE75C400EBCC04 /* DocumentViewPicker.swift in Sources */,
 				864F482A24EFC9D900D63C44 /* AddFileView.swift in Sources */,
 				8610D6C124EE5A1300EBCC04 /* SceneDelegate.swift in Sources */,
+				869501482504E57D0095E586 /* BookGridView.swift in Sources */,
 				864F483524F02FAF00D63C44 /* Book+CoreDataClass.swift in Sources */,
 				8610D6F524EEB14000EBCC04 /* PDFKitView.swift in Sources */,
 				8610D6C324EE5A1300EBCC04 /* ContentView.swift in Sources */,

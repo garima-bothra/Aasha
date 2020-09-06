@@ -10,17 +10,8 @@ import SwiftUI
 struct DetailView: View {
     var book: Book
     var body: some View {
-        Form {
-            Text(book.descrip ?? "Description")
-            Section {
-                ForEach(book.documentArray, id: \.self) { doc in
-                    NavigationLink(destination: PDFKitView(url: doc.bookURL!)) {
-                        Text(doc.wrappedLang)
-                    }
-                }
-            }
-        }
-        .navigationTitle(book.name ?? "Book Name")
+        PDFKitView(url: book.document.bookURL!)
+            .navigationTitle(book.name ?? "Book Name")
     }
 }
 
