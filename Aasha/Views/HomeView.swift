@@ -41,7 +41,7 @@ struct HomeView: View {
                 })
             }
             .sheet(isPresented: $showPicker) {
-                AddFileView().environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
+                AddFileView(languages: Languages()).environment(\.managedObjectContext, sceneDelegate.persistentContainer.viewContext)
             }
         }
     }

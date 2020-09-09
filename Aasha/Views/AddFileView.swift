@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddFileView: View {
 
+    @ObservedObject var languages: Languages
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.managedObjectContext) var managedObjectContext
 
@@ -23,7 +24,16 @@ struct AddFileView: View {
                 TextField("Name", text: $bookname)
                 TextField("Short Description", text: $description)
                 Section {
-                    TextField("Language", text: $lang)
+                    Picker(selection: $lang, label: Text("Language")) {
+                        ForEach(languages.languages, id: \.id) { language in
+                            HStack {
+                                Text(language.wrappedName)
+                                Spacer()
+                                Text(language.wrappedCode)
+                            }
+                            .tag("\(language.wrappedCode)")
+                                }
+                    }
                     Button(action: {
                         self.showPicker = true
                     })
