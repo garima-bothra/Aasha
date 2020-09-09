@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234D1B363ED616DD7417F11E /* Pods_Aasha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E871BD2D3A753524AFEFFEE3 /* Pods_Aasha.framework */; };
+		3C58BF9EF7F9C201664CEEF7 /* Pods_AashaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECA5CB1A2B3A8842FF776E8 /* Pods_AashaTests.framework */; };
+		73E9D25FCA27D33A8E861AD2 /* Pods_Aasha_AashaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAEAA1A89D7FC5E2AE958C4 /* Pods_Aasha_AashaUITests.framework */; };
 		8610D6BF24EE5A1300EBCC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6BE24EE5A1300EBCC04 /* AppDelegate.swift */; };
 		8610D6C124EE5A1300EBCC04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6C024EE5A1300EBCC04 /* SceneDelegate.swift */; };
 		8610D6C324EE5A1300EBCC04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610D6C224EE5A1300EBCC04 /* ContentView.swift */; };
@@ -26,6 +29,7 @@
 		864F483624F02FAF00D63C44 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F483224F02FAF00D63C44 /* Book+CoreDataProperties.swift */; };
 		864F483724F02FAF00D63C44 /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F483324F02FAF00D63C44 /* Document+CoreDataClass.swift */; };
 		864F483824F02FAF00D63C44 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864F483424F02FAF00D63C44 /* Document+CoreDataProperties.swift */; };
+		868B1DFF2508FD32009E7EE4 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868B1DFE2508FD32009E7EE4 /* APIKey.swift */; };
 		869501482504E57D0095E586 /* BookGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869501472504E57D0095E586 /* BookGridView.swift */; };
 		8695014A2504F2D30095E586 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869501492504F2D30095E586 /* TranslateView.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11033653FC7D6D188FF79E0B /* Pods-AashaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AashaTests.release.xcconfig"; path = "Target Support Files/Pods-AashaTests/Pods-AashaTests.release.xcconfig"; sourceTree = "<group>"; };
+		773D8905CE2BEA8393CF2B55 /* Pods-Aasha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aasha.debug.xcconfig"; path = "Target Support Files/Pods-Aasha/Pods-Aasha.debug.xcconfig"; sourceTree = "<group>"; };
+		77FF7B23C130332BAEB46E73 /* Pods-Aasha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aasha.release.xcconfig"; path = "Target Support Files/Pods-Aasha/Pods-Aasha.release.xcconfig"; sourceTree = "<group>"; };
+		7F2F1380B378C80C19FDA973 /* Pods-AashaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AashaTests.debug.xcconfig"; path = "Target Support Files/Pods-AashaTests/Pods-AashaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8610D6BB24EE5A1300EBCC04 /* Aasha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aasha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8610D6BE24EE5A1300EBCC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8610D6C024EE5A1300EBCC04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +81,14 @@
 		864F483224F02FAF00D63C44 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		864F483324F02FAF00D63C44 /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
 		864F483424F02FAF00D63C44 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		868B1DFE2508FD32009E7EE4 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		869501472504E57D0095E586 /* BookGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookGridView.swift; sourceTree = "<group>"; };
 		869501492504F2D30095E586 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		8F5FBAE4C414A3DA2F9F2711 /* Pods-Aasha-AashaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aasha-AashaUITests.release.xcconfig"; path = "Target Support Files/Pods-Aasha-AashaUITests/Pods-Aasha-AashaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CECA5CB1A2B3A8842FF776E8 /* Pods_AashaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AashaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA2AE2603779A84C035EF0D /* Pods-Aasha-AashaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aasha-AashaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Aasha-AashaUITests/Pods-Aasha-AashaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFAEAA1A89D7FC5E2AE958C4 /* Pods_Aasha_AashaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aasha_AashaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E871BD2D3A753524AFEFFEE3 /* Pods_Aasha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aasha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234D1B363ED616DD7417F11E /* Pods_Aasha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C58BF9EF7F9C201664CEEF7 /* Pods_AashaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +112,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E9D25FCA27D33A8E861AD2 /* Pods_Aasha_AashaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4932BB639956CE827AE9B531 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				773D8905CE2BEA8393CF2B55 /* Pods-Aasha.debug.xcconfig */,
+				77FF7B23C130332BAEB46E73 /* Pods-Aasha.release.xcconfig */,
+				DAA2AE2603779A84C035EF0D /* Pods-Aasha-AashaUITests.debug.xcconfig */,
+				8F5FBAE4C414A3DA2F9F2711 /* Pods-Aasha-AashaUITests.release.xcconfig */,
+				7F2F1380B378C80C19FDA973 /* Pods-AashaTests.debug.xcconfig */,
+				11033653FC7D6D188FF79E0B /* Pods-AashaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8610D6B224EE5A1300EBCC04 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +139,8 @@
 				8610D6D424EE5A1500EBCC04 /* AashaTests */,
 				8610D6DF24EE5A1600EBCC04 /* AashaUITests */,
 				8610D6BC24EE5A1300EBCC04 /* Products */,
+				4932BB639956CE827AE9B531 /* Pods */,
+				A6C079F6C409838B020440C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				8610D6BE24EE5A1300EBCC04 /* AppDelegate.swift */,
+				868B1DFE2508FD32009E7EE4 /* APIKey.swift */,
 				8610D6C024EE5A1300EBCC04 /* SceneDelegate.swift */,
 			);
 			path = Utils;
@@ -207,6 +240,16 @@
 			path = "Helper View";
 			sourceTree = "<group>";
 		};
+		A6C079F6C409838B020440C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E871BD2D3A753524AFEFFEE3 /* Pods_Aasha.framework */,
+				DFAEAA1A89D7FC5E2AE958C4 /* Pods_Aasha_AashaUITests.framework */,
+				CECA5CB1A2B3A8842FF776E8 /* Pods_AashaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8610D6E524EE5A1600EBCC04 /* Build configuration list for PBXNativeTarget "Aasha" */;
 			buildPhases = (
+				D7F887D76D7EE2A41247FD1A /* [CP] Check Pods Manifest.lock */,
 				8610D6B724EE5A1300EBCC04 /* Sources */,
 				8610D6B824EE5A1300EBCC04 /* Frameworks */,
 				8610D6B924EE5A1300EBCC04 /* Resources */,
+				55C4F4867A8B16D376621A00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8610D6E824EE5A1600EBCC04 /* Build configuration list for PBXNativeTarget "AashaTests" */;
 			buildPhases = (
+				6549733963A437C2EDF0CA22 /* [CP] Check Pods Manifest.lock */,
 				8610D6CD24EE5A1500EBCC04 /* Sources */,
 				8610D6CE24EE5A1500EBCC04 /* Frameworks */,
 				8610D6CF24EE5A1500EBCC04 /* Resources */,
@@ -249,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8610D6EB24EE5A1600EBCC04 /* Build configuration list for PBXNativeTarget "AashaUITests" */;
 			buildPhases = (
+				777218E662508E04ED2A1BAD /* [CP] Check Pods Manifest.lock */,
 				8610D6D824EE5A1600EBCC04 /* Sources */,
 				8610D6D924EE5A1600EBCC04 /* Frameworks */,
 				8610D6DA24EE5A1600EBCC04 /* Resources */,
+				B2A75211D233F8EC0669DAA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,6 +380,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55C4F4867A8B16D376621A00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aasha/Pods-Aasha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aasha/Pods-Aasha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aasha/Pods-Aasha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6549733963A437C2EDF0CA22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AashaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777218E662508E04ED2A1BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aasha-AashaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2A75211D233F8EC0669DAA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aasha-AashaUITests/Pods-Aasha-AashaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aasha-AashaUITests/Pods-Aasha-AashaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aasha-AashaUITests/Pods-Aasha-AashaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F887D76D7EE2A41247FD1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aasha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8610D6B724EE5A1300EBCC04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,6 +504,7 @@
 				864F483524F02FAF00D63C44 /* Book+CoreDataClass.swift in Sources */,
 				8610D6F524EEB14000EBCC04 /* PDFKitView.swift in Sources */,
 				8610D6C324EE5A1300EBCC04 /* ContentView.swift in Sources */,
+				868B1DFF2508FD32009E7EE4 /* APIKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +669,7 @@
 		};
 		8610D6E624EE5A1600EBCC04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 773D8905CE2BEA8393CF2B55 /* Pods-Aasha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -538,6 +691,7 @@
 		};
 		8610D6E724EE5A1600EBCC04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FF7B23C130332BAEB46E73 /* Pods-Aasha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -559,6 +713,7 @@
 		};
 		8610D6E924EE5A1600EBCC04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2F1380B378C80C19FDA973 /* Pods-AashaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -581,6 +736,7 @@
 		};
 		8610D6EA24EE5A1600EBCC04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11033653FC7D6D188FF79E0B /* Pods-AashaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +759,7 @@
 		};
 		8610D6EC24EE5A1600EBCC04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA2AE2603779A84C035EF0D /* Pods-Aasha-AashaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,6 +780,7 @@
 		};
 		8610D6ED24EE5A1600EBCC04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5FBAE4C414A3DA2F9F2711 /* Pods-Aasha-AashaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

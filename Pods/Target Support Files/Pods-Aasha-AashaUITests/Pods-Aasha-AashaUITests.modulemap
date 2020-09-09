@@ -1,0 +1,6 @@
+framework module Pods_Aasha_AashaUITests {
+  umbrella header "Pods-Aasha-AashaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
