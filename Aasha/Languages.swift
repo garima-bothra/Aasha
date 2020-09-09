@@ -24,6 +24,10 @@ class Language {
 class Languages {
     var languages: [Language] = []
 
+    init() {
+        getLanguages()
+    }
+    
     func getLanguages() {
         SwiftGoogleTranslate.shared.languages { (languages, error) in
             if let languages = languages {
