@@ -33,7 +33,6 @@
 		869501482504E57D0095E586 /* BookGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869501472504E57D0095E586 /* BookGridView.swift */; };
 		8695014A2504F2D30095E586 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869501492504F2D30095E586 /* TranslateView.swift */; };
 		86974C992509046E00F19F0B /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86974C982509046E00F19F0B /* Languages.swift */; };
-		86974C9C2509079300F19F0B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86974C9B2509079300F19F0B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +86,6 @@
 		869501472504E57D0095E586 /* BookGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookGridView.swift; sourceTree = "<group>"; };
 		869501492504F2D30095E586 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 		86974C982509046E00F19F0B /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
-		86974C9B2509079300F19F0B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F5FBAE4C414A3DA2F9F2711 /* Pods-Aasha-AashaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aasha-AashaUITests.release.xcconfig"; path = "Target Support Files/Pods-Aasha-AashaUITests/Pods-Aasha-AashaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CECA5CB1A2B3A8842FF776E8 /* Pods_AashaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AashaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA2AE2603779A84C035EF0D /* Pods-Aasha-AashaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aasha-AashaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Aasha-AashaUITests/Pods-Aasha-AashaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -249,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				86974C982509046E00F19F0B /* Languages.swift */,
-				86974C9B2509079300F19F0B /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -503,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				864F482824EFB5BC00D63C44 /* Book.xcdatamodeld in Sources */,
-				86974C9C2509079300F19F0B /* Constants.swift in Sources */,
 				864F483724F02FAF00D63C44 /* Document+CoreDataClass.swift in Sources */,
 				864F483824F02FAF00D63C44 /* Document+CoreDataProperties.swift in Sources */,
 				8610D6BF24EE5A1300EBCC04 /* AppDelegate.swift in Sources */,
