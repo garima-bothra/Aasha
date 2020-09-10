@@ -17,11 +17,16 @@ extension Document {
     }
 
     @NSManaged public var lang: String?
+    @NSManaged public var langCode: String?
     @NSManaged public var bookURL: URL?
     @NSManaged public var book: Book?
 
     public var wrappedLang: String {
-        lang ?? "Unknown Language"
+        lang ?? "Error"
+    }
+
+    public var wrappedLangCode: String {
+        langCode ?? "Error"
     }
 }
 

@@ -17,7 +17,7 @@ struct AddFileView: View {
     @State var showPicker = false
     @State var url: URL!
     @State var description = String()
-    @State var lang = String()
+    @State var lang = Language()
     var body: some View {
         NavigationView {
             Form {
@@ -31,8 +31,8 @@ struct AddFileView: View {
                                 Spacer()
                                 Text(language.wrappedCode)
                             }
-                            .tag("\(language.wrappedCode)")
-                                }
+                            .tag(language)
+                        }
                     }
                     Button(action: {
                         self.showPicker = true
@@ -54,7 +54,8 @@ struct AddFileView: View {
                         let book = Book(context: managedObjectContext)
                         book.name = bookname
                         let doc = Document(context: managedObjectContext)
-                        doc.lang = lang
+                        doc.lang = lang.name
+                        doc.langCode = lang.code
                         doc.bookURL = url
                         book.descrip = description
                         book.id = UUID()

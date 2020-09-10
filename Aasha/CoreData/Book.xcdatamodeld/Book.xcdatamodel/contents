@@ -9,10 +9,11 @@
     <entity name="Document" representedClassName="Document" syncable="YES">
         <attribute name="bookURL" optional="YES" attributeType="URI"/>
         <attribute name="lang" optional="YES" attributeType="String"/>
+        <attribute name="langCode" optional="YES" attributeType="String"/>
         <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="docs" inverseEntity="Book"/>
     </entity>
     <elements>
         <element name="Book" positionX="-63" positionY="-18" width="139.91015625" height="103"/>
-        <element name="Document" positionX="120.14453125" positionY="-4.01171875" width="128" height="73"/>
+        <element name="Document" positionX="120.14453125" positionY="-4.01171875" width="128" height="103"/>
     </elements>
 </model>
